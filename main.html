@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RaSoR: Ramanujan Society of Research">
+  <title>RaSoR Socials</title>
+  <link rel="icon" type="image/png" href="rasor-logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: url('IITM.jpg') center/cover fixed;
+      filter: blur(10px);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .title {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      color: white; /* Set font color to white */
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .button {
+      flex: 0 0 calc(33.33% - 20px);
+      max-width: calc(33.33% - 20px);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: #2a211f;
+      transition: transform 0.3s;
+      width: 100%;
+    }
+
+    .button img {
+      margin-bottom: 10px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+
+    .button.discord {
+      font-family: 'Bubblegum Sans', sans-serif;
+    }
+
+    .button.website {
+      font-size: 18px;
+    }
+
+    @media (max-width: 992px) {
+      .button {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .button {
+        flex: 0 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+      }
+
+      .title {
+        font-size: 1.5em;
+      }
+
+      .button img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .footer {
+      background: #222;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="logo">
+      <img src="rasor-logo.png" alt="RaSoR Logo">
+    </div>
+    <div class="title">
+      RaSoR: Ramanujan Society of Research
+    </div>
+
+    <div class="buttons-container">
+      <a href="https://www.instagram.com/rasor_iitm/" class="button btn btn-danger" role="button" target="_blank">
+        <img src="instagram.png" alt="Instagram"> Instagram
+      </a>
+
+      <a href="https://www.linkedin.com/company/rasor-iitm/" class="button btn btn-primary" role="button" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn"> LinkedIn
+      </a>
+
+      <a href="https://www.youtube.com/@rasor_iitm" class="button btn btn-danger" role="button" target="_blank">
+        <img src="youtube.png" alt="YouTube"> YouTube
+      </a>
+
+      <a href="https://rasoriitm.vercel.app/" class="button btn btn-success website" role="button" target="_blank">
+        <img src="website.png" alt="Website"> Website
+      </a>
+
+      <a href="https://chat.google.com/room/AAAA2h0XiZg?cls=7" class="button btn btn-primary" role="button" target="_blank">
+        <img src="google.png" alt="Google Space"> Google Space
+      </a>
+
+      <a href="https://discord.gg/mGWTZRFF9c" class="button btn btn-info discord" role="button" target="_blank">
+        <img src="discord.png" alt="Discord"> Discord
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2024 RaSoR IITM BS
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
